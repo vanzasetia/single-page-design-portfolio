@@ -1,0 +1,62 @@
+.a11y-slider-container {
+  position: relative;
+  direction: ltr;
+}
+
+.a11y-slider {
+  -ms-overflow-style: none;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.a11y-slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.a11y-slider > * {
+  box-sizing: inherit;
+  scroll-snap-align: start;
+}
+
+.a11y-slider-sr-only,
+.a11y-slider-status {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  font-size: 1em;
+  font-family: inherit;
+  text-align: center;
+}
+
+.a11y-slider-sr-only:focus {
+  clip: auto;
+  position: static;
+  margin: 0;
+  background: #000;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
+
+.a11y-slider-hide {
+  display: none;
+}
+
+.a11y-slider-scrolling {
+  cursor: grabbing;
+  scroll-behavior: auto;
+  scroll-snap-type: none;
+  user-select: none;
+}

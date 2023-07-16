@@ -1,0 +1,24 @@
+{
+  "name": "Single-Page Design Portfolio | Frontend Mentor",
+	"short_name": "Amy",
+	"description": "I have over ten years experience in various design disciplines. I'm your one-stop shop for all your design needs.",
+	"start_url": "/",
+  "id": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/images/icon-large.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "/images/icon-large-maskable.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    }
+	]
+}

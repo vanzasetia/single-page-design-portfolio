@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--space-2xs);
+  padding-left: var(--space-2xs);
+
+  // max-width = 1110px + padding-right + padding-left
+  // padding-right + padding-left = 32 + 32
+  max-width: rem(1174);
+}

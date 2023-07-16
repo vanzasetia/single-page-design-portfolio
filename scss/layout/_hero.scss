@@ -1,0 +1,85 @@
+@use "../abstracts" as *;
+
+.hero {
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.hero p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero [role="list"] {
+  --flow-space: 4.5em;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(24);
+  text-align: left;
+
+  @include breakpoint-up("tiny") {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(100%, clamp(rem(130), 16vw, rem(160))), 1fr)
+    );
+  }
+}
+
+.hero li {
+  display: flex;
+  align-items: flex-end;
+  border-radius: rem(8);
+  background-position: top rem(24) right rem(24);
+  padding-top: rem(100);
+  padding-bottom: rem(24);
+  padding-left: rem(24);
+  font-weight: 700;
+  font-size: rem(24);
+}
+
+.hero li:first-child {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-image: url("/svg/pattern-graphic-design.svg");
+  background-color: var(--soft-blue);
+  padding-top: rem(200);
+  color: var(--white);
+}
+
+.hero li:nth-child(4),
+.hero li:nth-child(5),
+.hero li:last-child {
+  grid-column: span 2;
+  color: var(--white);
+}
+
+.hero li:nth-child(2) {
+  background-image: url("/svg/pattern-ui-ux.svg");
+  background-color: var(--soft-orange);
+  color: var(--white);
+}
+
+.hero li:nth-child(3) {
+  background-image: url("/svg/pattern-apps.svg");
+  background-color: var(--very-soft-red);
+  color: var(--white);
+}
+
+.hero li:nth-child(4) {
+  background-image: url("/svg/pattern-photography.svg");
+  background-color: var(--moderate-cyan);
+  color: var(--white);
+}
+
+.hero li:nth-child(5) {
+  background-image: url("/svg/pattern-illustrations.svg");
+  background-color: var(--soft-red);
+  color: var(--white);
+}
+
+.hero li:last-child {
+  background-image: url("/svg/pattern-motion-graphics.svg");
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+}

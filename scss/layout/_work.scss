@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.work {
+  --flow-space: #{rem(56)};
+
+  margin-top: rem(100);
+  margin-bottom: rem(100);
+  text-align: center;
+}
+
+.work h2 {
+  font-size: rem(32);
+}

@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.call-to-action {
+  display: inline-block;
+  border-radius: 2em;
+  padding: rem(14) rem(45);
+  font-size: rem(16);
+
+  @include prefers-motion {
+    transition: background-color var(--transition-base);
+  }
+}
+
+.call-to-action--dark {
+  background-color: var(--very-dark-gray);
+  color: var(--very-pale-orange);
+
+  @include hover {
+    background-color: var(--soft-blue);
+  }
+}
+
+.call-to-action--light {
+  background-color: var(--soft-red);
+  color: var(--very-pale-orange);
+
+  @include hover {
+    background-color: var(--soft-orange);
+  }
+}

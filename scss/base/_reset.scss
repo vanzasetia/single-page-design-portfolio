@@ -1,0 +1,174 @@
+@use "../abstracts" as *;
+
+:root {
+  --soft-blue: hsl(252deg 66% 62%);
+  --soft-orange: hsl(28deg 89% 67%);
+  --very-soft-red: hsl(0deg 79% 79%);
+  --soft-red: hsl(7deg 77% 66%);
+  --moderate-cyan: hsl(172deg 46% 57%);
+  --very-dark-magenta: hsl(314deg 46% 23%);
+  --very-dark-gray: hsl(0deg 0% 1%);
+  --dark-grayish-orange: hsl(30deg 5% 45%);
+  --very-pale-orange: hsl(28deg 100% 97%);
+  --white: hsl(0deg 0% 100%);
+  --step-0: clamp(1rem, calc(0.94rem + 0.27vw), 1.13rem);
+  --step-1: clamp(1.5rem, calc(1.24rem + 1.09vw), 2rem);
+  --step-2: clamp(1.63rem, calc(1.18rem + 1.9vw), 2.5rem);
+  --step-3: clamp(2.25rem, calc(1.61rem + 2.72vw), 3.5rem);
+  --space-2xs: clamp(1rem, calc(0.49rem + 2.18vw), 2rem);
+  --space-xs: clamp(2.5rem, calc(1.99rem + 2.18vw), 3.5rem);
+  --space-s: clamp(1.5rem, calc(0.19rem + 5.58vw), 4.06rem);
+  --space-m: clamp(1.5rem, calc(-0.76rem + 9.66vw), 5.94rem);
+  --space-l: clamp(2.5rem, calc(-0.21rem + 11.56vw), 7.81rem);
+  --space-xl: clamp(6.25rem, calc(5.1rem + 4.9vw), 8.5rem);
+  --transition-base: 200ms ease-in-out;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/PlusJakartaSans-Bold.woff2") format("woff2");
+  font-family: "Plus Jakarta Sans";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  src: url("/fonts/PlusJakartaSans-Medium.woff2") format("woff2");
+  font-family: "Plus Jakarta Sans";
+  font-display: swap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: -1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  background-repeat: no-repeat;
+  padding: 0;
+}
+
+:focus {
+  @include focus-styling(var(--very-dark-gray));
+}
+
+body {
+  background-color: var(--very-pale-orange);
+  padding-top: var(--space-2xs);
+  padding-bottom: var(--space-2xs);
+  min-height: 100vh;
+  color: var(--dark-grayish-orange);
+  font-weight: 500;
+  font-size: var(--step-0);
+  line-height: 1.5;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+main {
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  max-width: 55ch;
+}
+
+h1,
+h2 {
+  color: var(--very-dark-gray);
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: var(--step-3);
+}
+
+h2 {
+  font-size: var(--step-2);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+button[type] {
+  cursor: pointer;
+  font: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+svg {
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+svg path {
+  fill: currentColor;
+}
+
+[href] {
+  text-decoration-color: transparent;
+  text-underline-offset: 0.3em;
+}
+
+[href="#main"] {
+  display: inline-block;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+  transform: translateX(-200%);
+  z-index: 200;
+  background-color: var(--very-dark-gray);
+  padding: 1em 2em;
+  color: var(--very-pale-orange);
+  font-size: 1.25rem;
+}
+
+@include prefers-motion {
+  [href="#main"] {
+    transition: transform var(--transition-base);
+  }
+}
+
+[href="#main"]:focus {
+  transform: translate(0);
+}

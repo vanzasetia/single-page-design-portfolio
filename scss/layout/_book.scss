@@ -1,0 +1,49 @@
+@use "../abstracts" as *;
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25em;
+  border-radius: rem(10);
+  background-color: var(--very-dark-gray);
+  padding: rem(80) var(--space-s);
+  padding-right: var(--space-m);
+  color: var(--very-pale-orange);
+  text-align: center;
+
+  @include breakpoint-up("tiny") {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.book :focus {
+  outline-color: var(--very-pale-orange);
+}
+
+.book__wrapper {
+  @include breakpoint-up("tiny") {
+    flex-grow: 0;
+    flex-basis: rem(540);
+  }
+}
+
+.book h2 {
+  color: inherit;
+}
+
+.book p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.book a {
+  flex-shrink: 0;
+  justify-self: center;
+
+  @include breakpoint-up("tiny") {
+    justify-self: end;
+  }
+}
