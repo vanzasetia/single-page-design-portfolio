@@ -193,7 +193,9 @@ By the way, I tried to understand the functionality of the A11Y Slider. Then, I 
 
 When, I said using it, I meant to use the `Ctrl` + `C` and then `Ctrl` + `V`.
 
-Now, I wanted to use it, and faced an issue.
+Now, I wanted to use it to create a slider, and faced an issue.
+
+You know, when I said using it, I meant [TRUNCATED].
 
 I did not want to use the default buttons that are provided by the A11Y Slider. I wanted to use custom buttons. The documentation said that `prevArrow` and `nextArrow` accept `Node` or `NodeList` data types. I did not know `Node` or `NodeList`—I only knew how to use Node.js by installing packages.
 
@@ -263,11 +265,7 @@ const sliderSettings = {
 new A11YSlider(doc.querySelector(".js-slider"), sliderSettings);
 ```
 
-Now, Amy's website has a slider. I do not know how accessible the slider is.
-
-I know for sure that if the JavaScript is disabled or failed to load, the users still can see all the images.
-
-When the JavaScript failed to load, the users would get a horizontal scrollbar to see all the images.
+Now, Amy's website has a slider. I do not know how accessible the slider is. But, I know for sure that if the JavaScript is disabled or failed to load, the users still can see all the images. The users would get a horizontal scrollbar to see all the images.
 
 ## Potential problems
 
