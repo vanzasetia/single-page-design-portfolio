@@ -273,7 +273,7 @@ I do not know whether those are problems or not.
 
 In this section, I will discuss those potential problems.
 
-## I can not scroll
+### I can not scroll
 
 I tried the website on my mobile device in landscape orientation. I noticed that I could not scroll when I was on the slider section.
 
@@ -283,7 +283,7 @@ As a user, I could fix the problem by changing my device orientation to portrait
 
 **But, is that a problem?**
 
-## Always smooth transition
+### Always smooth transition
 
 The users always see a smooth transition on the slider even though they disable animations.
 
