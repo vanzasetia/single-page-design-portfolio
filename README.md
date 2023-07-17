@@ -31,7 +31,7 @@ I decided to do this challenge anyway to try learning creating a slider.
 ## Explore this project
 
 - [Live review](https://amydesigner.netlify.app/)
-- [Frontend Mentor solution page](https://www.frontendmentor.io/)
+- [Frontend Mentor solution page](hhttps://www.frontendmentor.io/solutions/responsive-singlepage-design-portfolio-with-grid-and-flexbox-9PaN6fcQ9T)
 - [Documentation](./docs/README.md)
 
 ## Built with
