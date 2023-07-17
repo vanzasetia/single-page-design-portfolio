@@ -269,6 +269,30 @@ I know for sure that if the JavaScript is disabled or failed to load, the users 
 
 When the JavaScript failed to load, the users would get a horizontal scrollbar to see all the images.
 
+## Potential problems
+
+I do not know whether those are problems or not.
+
+In this section, I will discuss those potential problems.
+
+## I can not scroll
+
+I tried the website on my mobile device in landscape orientation. I noticed that I could not scroll when I was on the slider section.
+
+**My screen was full of the image and I could not scroll to the top or to the bottom.** I got stuck.
+
+As a user, I could fix the problem by changing my device orientation to portrait.
+
+**But, is that a problem?**
+
+## Always smooth transition
+
+The users always see a smooth transition on the slider even though they disable animations.
+
+I can not stop it with CSS. Also, I think a transition for the slide effect is essential. Without the transition, the slide effect will happen abruptly.
+
+What do you think? **Should the transition on the slider get disabled?**
+
 ## About me
 
 At Frontend Mentor, I have completed over 30 projects and written over 1500 code reviews. I am also one of the top 20 developers on the All-Time Wall of Fame.
