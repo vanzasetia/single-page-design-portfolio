@@ -40,6 +40,12 @@ This is the place where I put all the resources that I find useful to build this
 
 ## Validations
 
+- [W3C CSS Validator results for https://amydesigner.netlify.app/ (CSS level 3 + SVG)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Famydesigner.netlify.app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+- [Showing results for https://amydesigner.netlify.app/ - Nu Html Checker](https://validator.w3.org/nu/?doc=https%3A%2F%2Famydesigner.netlify.app%2F)
+- [Checklist - The A11Y Project](https://www.a11yproject.com/checklist/)
+- [Report for: hhttps://amydesigner.netlify.app/ | PageSpeed Insights](https://pagespeed.web.dev/analysis/https-amydesigner-netlify-app/sp6a8byrln?form_factor=mobile)
+- [WAVE Report of Single-Page Design Portfolio | Frontend Mentor](https://wave.webaim.org/report#/https://amydesigner.netlify.app/) - **WAVE reported 8 contrast errors.**
+
 ## Others
 
 - [Plus Jakarta Sans - Google Fonts](https://fonts.google.com/specimen/Plus+Jakarta+Sans)
