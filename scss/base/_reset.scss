@@ -172,3 +172,7 @@ svg path {
 [href="#main"]:focus {
   transform: translate(0);
 }
+
+[hidden] {
+  display: none !important;
+}

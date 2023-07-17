@@ -231,6 +231,10 @@ svg path {
   transform: translate(0);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -564,4 +568,19 @@ svg path {
   .book a {
     justify-self: end;
   }
+}
+
+.attribution {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.attribution p {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.attribution [href] {
+  color: var(--very-dark-gray);
+  text-decoration-color: currentColor;
 }
