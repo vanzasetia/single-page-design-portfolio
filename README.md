@@ -122,6 +122,27 @@ I tried different ways but I did not manage to remove the "step three" layout.
 
 Do you want to play around with the code? CodePen — [Responsive Grid Algorithm](https://codepen.io/vanzasetia/pen/ExOQKBB)
 
+I ended up having a breakpoint to remove the "step three" layout.
+
+```css
+/* First, the layout will have two columns */
+.hero [role="list"] {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/*
+Second, after skipping the "step three" layout,
+I give a guide to the browser.
+I let the browser decide on the layout.
+*/
+@media screen and (min-width: 46.875em) {
+  .hero [role=list] {
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, clamp(8.125rem, 16vw, 10rem)), 1fr));
+  }
+}
+```
+
 ### Another mission impossible
 
 On the desktop, the text inside the dark box—"Book a call with me"—is aligned left. While on tablet and mobile, the text is aligned center.
@@ -135,6 +156,8 @@ On the desktop, the text inside the dark box—"Book a call with me"—is aligne
 Someone created a CodePen about making a responsive text alignment — [CodePen - Responsive Text Align](https://cdpn.io/SitePoint/fullpage/EZOgbB?anon=true&view=fullpage)
 
 I can not apply it since the situations are different.
+
+In the end, I used a breakpoint to change the text alignment and **the alignment of the "Free Consultation" button.**
 
 ### How to make a slider?
 
